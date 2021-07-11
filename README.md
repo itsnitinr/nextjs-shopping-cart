@@ -1,3 +1,6 @@
+## Companion Repo for [LogRocket Blog Post](https://blog.logrocket.com/building-a-next-js-shopping-cart-app/)
+![Banner Image](https://blog.logrocket.com/wp-content/uploads/2021/07/Building-Next-js-shopping-cart-app.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
