@@ -2,15 +2,14 @@ version: 0.2
 
 phases:
   pre_build:
+    runtime-versions:
+       nodejs: 12
     commands:
-      - npm install
+       - yarn
+       - npm install next -g
   build:
     commands:
-      - npm run build
-      
+       - npx next build
 artifacts:
   files:
-    - appspec.yml
-    - build/*
-  discard-paths: no
-  base-directory: build
+     - '**/*'
