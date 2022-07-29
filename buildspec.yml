@@ -1,12 +1,21 @@
 version: 0.2
 
 phases:
+  install:
     commands:
-       - yarn
-       - npm install next -g
+      - echo Installing dependency...
+      - npm install -g next
+      - yarn
+  pre_build:
+    commands:
+      - printenv > .env
   build:
     commands:
-       - npx next build
+      - echo Compiling the Node.js code
+      - yarn build
+  post_build:
+    commands:
+      - echo Build completed on `date`
 artifacts:
   files:
-     - '**/*'
+    - '**/*'
