@@ -21,7 +21,7 @@ const Navbar = () => {
         </li>
         <li className={styles.navlink}>
           <Link href="/cart">
-            <p>Cart ({getItemsCount()})</p>
+            <a>Cart ({getItemsCount()})</a>
           </Link>
         </li>
       </ul>
